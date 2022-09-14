@@ -15,20 +15,23 @@
         <div class="container">
             <nav>   
                 <img src="img/logo.png" class="logo">
-                  <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">My Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                  <ul id="sidemenu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skill">Skills</a></li>
+                    <li><a href="#my-project">My Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                    <i class=" fas fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
                     
                 </ul>
+                <i class=" fas fa-solid fa-bars" onclick="openmenu()"></i>
             
             </nav>
 
 
             <div class="header-text">
                 <h3>JAVA BackEnd Dev.</h3>
-                <h1>Hi, I'm <span>Saurabh</span> <br>Kumar BackEnd Developer </h1>
+                <h1>Hi, I'm <span>Saurabh</span> <br>Kumar, BackEnd Developer </h1>
             </div>
 
         </div>
@@ -64,7 +67,7 @@
                         <ul>
                             <li> <span>FULL-STACK DEVELOPMENT -2022</span><br>Masai School</li>
                             <li> <span>Bsc-IT-2018-2021</span> <br>AN College,Patna</li>
-                            <li> <span>10+2 - PSC </span> <br> 2016-2018 </li>
+                            <li> <span>10+2 - PCM </span> <br> 2016-2018 </li>
                             
                         </ul>
                     </div>
@@ -154,8 +157,8 @@
                             This website promotes compassionate, meat-free dining experience. Some food may contain eggs,
                              dairy products or alcohol, please view individual listings for details.
                         </p>
-                        <a href="#"><i class="fa-solid fa-link"></i></a>
-                        <a href="#"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://aquamarine-lamington-a36266.netlify.app/"><i class="fa-solid fa-link"></i></a>
+                        <a href="https://github.com/Aman103767/TEAM-ONE-PIECE"><i class="fa-brands fa-square-github"></i></a>
                     </div>
                 </div>
 
@@ -167,8 +170,8 @@
                             ZEE5 is an Indian subscription video on-demand and over-the-top streaming service, run by Zee Entertainment Enterprises. 
                             It was launched in India on 14 February 2018 with content in 12 languages.
                         </p>
-                        <a href="#"><i class="fa-solid fa-link"></i></a>
-                        <a href="#"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://peaceful-sunburst-6090f0.netlify.app/"><i class="fa-solid fa-link"></i></a>
+                        <a href="https://github.com/kriti4666/ZEE-5-Project/tree/main/zee5_final"><i class="fa-brands fa-square-github"></i></a>
                     </div>
                 </div>
 
@@ -180,8 +183,8 @@
                             Monday.com is a cloud-based platform that allows users to create their own applications and work management software.
                              The product was launched in 2014 and in July 2019
                         </p>
-                        <a href="#"><i class="fa-solid fa-link"></i></a>
-                        <a href="#"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://playful-smakager-31da9c.netlify.app/home_page/homepage/"><i class="fa-solid fa-link"></i></a>
+                        <a href="https://github.com/raj74434/puny-cactus-404"><i class="fa-brands fa-square-github"></i></a>
                     </div>
                 </div>
             </div>
@@ -206,10 +209,10 @@
                     <p> <i class="fa-solid fa-envelope"></i> srkjha1234@gmail.com</p>
                     <p> <i class="fas fa-phone-square-alt"></i> 790327182</p>
                     <div class="social-icons">
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#"><i class="fa-brands fa-github"></i></a>
-                        <a href="#"><i class="fa-brands fa-discord"></i></a>
-                        <a href="#"><i class="fa-brands fa-hackerrank"></i></a>
+                        <a href="https://www.linkedin.com/in/srkjha/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/srkjha"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://discord.com/channels/@me"><i class="fa-brands fa-discord"></i></a>
+                        <a href="https://www.hackerrank.com/srkjha1234"><i class="fa-brands fa-hackerrank"></i></a>
                     </div>
 
                     <a href="img/saurabh-kumar-resume.pdf" download class="btn btn2">RESUME</a>
@@ -217,14 +220,17 @@
 
 
                 <div class="contact-ryt">
-                    <form>
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
 
-                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
 
                         <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
                         <button type="submit" class="btn btn2">SUBMIT</button>
                     </form>
+
+                    <span id="msg"></span>
+
                 </div>
             </div>
         </div>
