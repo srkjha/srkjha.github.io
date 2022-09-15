@@ -41,7 +41,7 @@ nav{
 }
 
 .logo{
-    width: 145px;
+    width: 200px;
 
 }
 
@@ -404,7 +404,7 @@ nav .fas{
     }
     
     .header-text{
-        margin-top: 150%;
+        margin-top: 100%;
         font-size: 16px;
         margin-left: 50px;
     }
@@ -470,6 +470,9 @@ nav .fas{
         font-size: 14px;
     }
 }
+
+
+
 
 #msg{
     margin-top: -40px;
