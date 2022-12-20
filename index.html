@@ -5,9 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Portfolio-Saurabh Kumar</title>
-    <script src="https://kit.fontawesome.com/3261aecf02.js" crossorigin="anonymous"></script>
 
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
+
+
+
+
+
+
+
+    <title>Saurabh Kumar-Backend Developer</title>
+    <script src="https://kit.fontawesome.com/3261aecf02.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/saurabh.jpg" />
 </head>
 <body>
 
@@ -16,10 +25,12 @@
             <nav>   
                 <img src="img/logo.png" class="logo">
                   <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skill">Skills</a></li>
                     <li><a href="#my-project">My Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li> <a href="img/Saurabh-Kumar-Resume.pdf" target="_blank" >Resume</a></li>
 
                     <i class=" fas fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
                     
@@ -32,9 +43,8 @@
             <div class="header-text">
                 <h3>Java Backend Developer</h3>
                 <h1>Hi, I'm <span>Saurabh</span> <br>Kumar, BackEnd Developer </h1>
-                <a href="img/saurabh-kumar-resume.pdf" download class="btn btn2">RESUME</a>
+                <a href="img/Saurabh-Kumar-Resume.pdf" download class="btn btn2">RESUME</a>
             </div>
-           
 
         </div>
     </div>
@@ -58,6 +68,7 @@
                        I am Graduated from Masai School and looking for an opportunity to enhance my skills and building some good 
                        products and A passionate and aspiring full-stack developer.Currently I work on Java BackEnd Development.
                     </p>
+                    
 
                     <div class="tab-titles">
                         <p class="tab-links active-link">Education</p>
@@ -72,6 +83,8 @@
                             <li> <span>10+2 - PCM </span> <br> 2016-2018 </li>
                             
                         </ul>
+
+                        <a href="img/saurabh-kumar-resume.pdf" download class="btn btn2">RESUME</a>
                     </div>
                 </div>
 
@@ -143,6 +156,42 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+<!--*********************************   github        ************************* -->
+
+
+
+
+
+
+
+<section id="gitSection">
+    <h2 >My Github Contribution</h2>
+    <div class="git--center">
+      <div class="calendar"> 
+        <!-- Loading stuff -->
+        Loading the data just for you.
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
     <!-- *****************myproject*************** -->
 
 
@@ -211,13 +260,13 @@
                     <p> <i class="fa-solid fa-envelope"></i> srkjha1234@gmail.com</p>
                     <p> <i class="fas fa-phone-square-alt"></i> 790327182</p>
                     <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/srkjha/"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/srkjha"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://discord.com/channels/@me"><i class="fa-brands fa-discord"></i></a>
-                        <a href="https://www.hackerrank.com/srkjha1234"><i class="fa-brands fa-hackerrank"></i></a>
+                        <a href="https://www.linkedin.com/in/srkjha/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/srkjha" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://discord.com/channels/@me" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                        <a href="https://www.hackerrank.com/srkjha1234" target="_blank"><i class="fa-brands fa-hackerrank"></i></a>
                     </div>
 
-                    <a href="img/saurabh_kumar_resume.pdf" download class="btn btn2">RESUME</a>
+                    <a href="img/Saurabh-Kumar-Resume.pdf" download class="btn btn2">RESUME</a>
                 </div>
 
 
@@ -257,4 +306,41 @@
 </body>
 
 <script src="main.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+<script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+</script>
+
+<script>
+  GitHubCalendar(".calendar", "srkjha");
+
+  // or enable responsive functionality:
+  GitHubCalendar(".calendar", "srkjha", { responsive: true });
+
+  // Use a proxy
+  GitHubCalendar(".calendar", "srkjha", {
+     proxy (srkjha) {
+       return fetch(`https://your-proxy.com/github?user=${srkjha}`)
+     }
+  }).then(r => r.text())
+</script>
+
+
+
+
+
+
+
+
+
 </html>
