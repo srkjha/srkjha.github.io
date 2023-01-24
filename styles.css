@@ -229,6 +229,10 @@ flex-basis: 55%;
 
 /* ********** */
 
+
+
+
+
 #my-project{
     padding: 50px 0;
 }
@@ -244,44 +248,59 @@ flex-basis: 55%;
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    border: 1px solid rgb(255, 255, 255);
 
 }
 
 .work img{
     width: 100%;
-    border-radius: 10px;
-    display: block;
+    height: 50%;
+    border-radius: 0px;
+    /* display: block; */
     transition: transform 0.5s;
 }
 
 .layer{
     width: 100%;
-    height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #404901);
+    height: 40%;
+    /* background: linear-gradient(rgba(0,0,0,0.6), #404901); */
     border-radius: 10px;
-    position: absolute;
+    position:relative;
     left: 0;
     bottom: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 0 40px;
-    text-align: center;
+    /* text-align: center; */
     font-size: 14px;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     transition: height 0.5s;
 }
 .layer h3{
-    font-size: 25px;
-    font-weight: 500;
-    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    color: rgb(189, 244, 80);
 }
 
-.layer a{
+
+.layer p{
+    font-size: 17px;
+    margin: 5px;
+}
+
+
+
+
+
+/* .layer a{
+   
 margin-top: 20px;
-color: #ff004f;
+color: #e1ff00;
 text-decoration: none;
 font-size: 18px;
 line-height: 60px;
@@ -290,7 +309,7 @@ width: 60px;
 height: 60px;
 border-radius: 50%;
 text-align: center;
-}
+} */
 
 
 .work:hover img{
@@ -298,10 +317,38 @@ text-align: center;
 }
 
 
-.work:hover .layer{
-    height: 100%;
 
-}
+.pro-btn {
+    margin: auto;
+    /* display: block; */
+    background-color: rgb(193, 218, 94);
+    color: rgb(3, 0, 0);
+    font-size: 16px;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+  
+  }
+  
+  .pro-btn:hover {
+    filter: brightness(70%);
+  }
+  
+  .btn-div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 16px;
+  }
+  
+/*   
+  .pro-img {
+    width: 100%;
+    height: 90%;
+  } */
+
 
 .btn{
     display: block;
@@ -320,6 +367,11 @@ text-align: center;
     background: yellow;
     color: black;
 }
+
+
+
+
+
 
 
 /* ****************contact***************** */
